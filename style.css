@@ -48,6 +48,27 @@ body h1 {
     align-items: center;
 }
 
+.hover-zoom {
+    transition: transform .2s;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.15);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    margin: 7px 10px;
+}
+
+.logo-tray {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
 #face_img {
     width: 70px;
     height: 70px;
@@ -65,7 +86,7 @@ body h1 {
     justify-content: flex-start;
 }
 
-.thumbnail-box {
+.box {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -74,24 +95,36 @@ body h1 {
     align-items: center;
     background-color: #212121;
     border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.box h2,
+.box p {
+    margin: 10px 20px;
+}
+
+.box hr {
+    width: 100%;
+}
+
+.box-hover-effect {
     transition: transform .2s;
-    text-decoration: none;
-    color: white;
 }
 
-.thumbnail-box a {
-    text-decoration: none;
-    color: white;
-}
-
-.thumbnail-box a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-.thumbnail-box:hover {
+.box-hover-effect:hover {
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.51);
     transform: scale(1.05);
+}
+
+.box a {
+    text-decoration: none;
+    color: white;
+}
+
+.box a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 .category-thumb {
@@ -117,7 +150,7 @@ body h1 {
         height: 400px;
     }
 
-    .thumbnail-box {
+    .box {
         width: 90%;
     }
 }
@@ -132,7 +165,7 @@ body h1 {
         height: 700px;
     }
 
-    .thumbnail-box {
+    .box {
         width: 700px;
     }
 }
