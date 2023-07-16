@@ -8,18 +8,37 @@ a {
     color: #3c93ff;
 }
 
-.headerlink {
-    color: white;
-    text-decoration: none;
-}
-
-.headerlink:visited {
-    color: white;
-    text-decoration: none;
-}
-
 a:visited {
     color: #9560ff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+}
+
+.header h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: xxx-large;
+}
+
+.header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.backbutton {
+    padding-top: 15px;
+    margin-left: 30px;
 }
 
 body h1 {
@@ -147,8 +166,8 @@ body h1 {
 
 .image-box .image-desc {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-desc {
