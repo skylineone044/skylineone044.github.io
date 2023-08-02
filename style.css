@@ -204,6 +204,7 @@ body h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .image-desc p {
@@ -219,11 +220,13 @@ body h1 {
     margin-left: auto;
 }
 
+.multiple-download-links-box > *:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 .image-desc a {
     color: white;
     text-decoration: none;
-    margin-top: 6px;
-    margin-bottom: 6px;
     background-color: #195193;
     padding: 3px 9px;
     border-radius: 15px;
